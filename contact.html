@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact | Kalika Innovations</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/logo.png" alt="Kalika Innovations Logo">
-            <span>Kalika Innovations</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" height="35" class="me-2"> Kalika Innovations
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
     </nav>
 
-    <section class="section">
-        <h2>Contact Us</h2>
-        <p><i class="fa-solid fa-envelope"></i> contact@kalikainnovations.com</p>
-        <p><i class="fa-solid fa-location-dot"></i> India</p>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="fw-bold">Contact Us</h1>
+                <p class="text-muted">Let’s build something great together</p>
+            </div>
 
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                        <button class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h5><i class="fa-solid fa-location-dot"></i> India</h5>
+                    <h5><i class="fa-solid fa-envelope"></i> contact@kalikainnovations.com</h5>
+                    <h5><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</h5>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>© 2026 Kalika Innovations</footer>
+    <footer class="bg-dark text-white py-4 text-center">
+        © 2026 Kalika Innovations
+    </footer>
 
 </body>
 

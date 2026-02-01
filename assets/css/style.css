@@ -1,0 +1,21 @@
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #1f3c88, #f39c12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 60px 0;
+}
