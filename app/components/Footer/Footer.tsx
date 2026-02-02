@@ -29,9 +29,9 @@ const footer = () => {
 
           <div className="col-span-4 md:col-span-12 lg:col-span-4">
             <img
-              src={getImagePath("/assets/footer/logo.svg")}
+              src={getImagePath("/assets/footer/logo.png")}
               alt="logo"
-              className="pb-8"
+              className="pb-8 w-[15rem]"
             />
             <div className="flex gap-4">
               <Link
@@ -117,7 +117,7 @@ const footer = () => {
                 height={24}
               />
               <h5 className="text-base font-normal text-offwhite">
-                +91 7400902513 
+                +91 7400902513
               </h5>
             </div>
             <div className="flex gap-2 mt-10 items-center">
