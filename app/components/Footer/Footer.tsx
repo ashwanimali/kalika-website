@@ -12,17 +12,17 @@ interface ProductType {
 const products: ProductType[] = [
   {
     id: 1,
-    link: ["Home", "Popular", "About", "Contact"],
+    link: ["Home", "Service", "Project", 'Contact'],
   },
   {
     id: 2,
-    link: ["Help", "Resources", "Application", "Team"],
+    link: ["About", "Team"],
   },
 ];
 
 const footer = () => {
   return (
-    <div className="bg-darkblue mt-8">
+    <div className="bg-darkblue mt-8" id="contact">
       <div className="mx-auto max-w-2xl pt-4 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="my-12 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           {/* COLUMN-1 */}
@@ -35,38 +35,15 @@ const footer = () => {
             />
             <div className="flex gap-4">
               <Link
-                href="#!"
-                onClick={(e) => e.preventDefault()}
-                className="footer-fb-icons"
+                href="https://www.linkedin.com/company/kalika-innovations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-icons"
               >
                 <Image
-                  src={getImagePath("/assets/footer/facebook.svg")}
-                  alt="facebook"
+                  src={getImagePath("/assets/footer/linkdin.svg")}
+                  alt="linkdin"
                   width={15}
-                  height={20}
-                />
-              </Link>
-              <Link
-                href="#!"
-                onClick={(e) => e.preventDefault()}
-                className="footer-icons"
-              >
-                <Image
-                  src={getImagePath("/assets/footer/twitter.svg")}
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-              </Link>
-              <Link
-                href="#!"
-                onClick={(e) => e.preventDefault()}
-                className="footer-icons"
-              >
-                <Image
-                  src={getImagePath("/assets/footer/instagram.svg")}
-                  alt="instagram"
-                  width={20}
                   height={20}
                 />
               </Link>
